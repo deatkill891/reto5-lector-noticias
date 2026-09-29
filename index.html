@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lector de noticias</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header id="encabezado">
+    <div class="container">
+      <h1>Lector de noticias</h1>
+      <p class="lead">Las últimas noticias sobre exploración espacial, en tiempo real.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="buscador" class="barra-herramientas">
+      <input type="search" id="busqueda" class="form-control" placeholder="Buscar noticias (por ejemplo, Starship)">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+      <button type="button" id="btn-actualizar" class="btn btn-outline-secondary">Actualizar</button>
+    </form>
+
+    <p id="info"></p>
+    <div id="mensaje" class="alert" hidden></div>
+
+    <!-- aquí se muestran las noticias -->
+    <section id="noticias" class="lista-noticias"></section>
+  </main>
+
+  <footer id="pie">
+    <p>Datos de la Spaceflight News API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
